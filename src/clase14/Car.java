@@ -25,6 +25,14 @@ public class Car {
         
         //Composición
         this.m = new Engine("Honda",10000);
+        this.m.setAxle(rear);
+            for(int i=0; i< this.rear.length ; i++)
+                this.rear[i].setAxle(m);
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" + "marca=" + marca + ", front=" + front[0] + ", rear=" + rear + ", m=" + m + '}';
     }
     
     

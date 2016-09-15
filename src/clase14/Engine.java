@@ -29,5 +29,10 @@ public class Engine {
     public void setAxle(Wheel[] axle) {
         this.axle = axle;
     }   
+
+    @Override
+    public String toString() {
+        return "Engine{" + "marca=" + marca + ", potencia=" + potencia + ", axle=" + axle + '}';
+    }
     
 }

@@ -23,6 +23,11 @@ public class Wheel {
     public void setAxle(Engine axle) {
         this.axle = axle;
     }
+
+    @Override
+    public String toString() {
+        return "Wheel{" + "marca=" + marca + ", diametro=" + diametro + ", axle=" + axle + '}';
+    }
     
     
     
